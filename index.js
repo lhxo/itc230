@@ -8,7 +8,7 @@ http.createServer((req,res) => {
         case '/':
             const FV = data.getAll();
             res.writeHead(200, {'Content-Type': 'text/plain'});
-            res.end(`Welcome to the market we have ${FV.length} fruits and vegetables!`);
+            res.end(`Welcome to the market we have ${FV.length} fruits and vegetables!`); //fixed to ES6
         break;
         case '/about':
             res.writeHead(200, {'Content-Type': 'text/plain'});
